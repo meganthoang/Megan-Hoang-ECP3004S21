@@ -1,0 +1,284 @@
+#--------------------------------------------------
+# Importing function definitions
+# Examples within script my_functions.py:
+#--------------------------------------------------
+#--------------------------------------------------
+Testing my Examples for Exercise 1.
+#--------------------------------------------------
+Exercise 1, Example 1:
+Evaluating average(10,20)
+Expected: 15.0
+Got: 15.0
+#--------------------------------------------------
+Exercise 1, Example 2:
+Evaluating average(2.5, 3.0)
+Expected: 2.75
+Got: 2.75
+#--------------------------------------------------
+Exercise 1, Example 3:
+Evaluating average(32, 19)
+Expected: 25.5
+Got: 25.5
+#--------------------------------------------------
+Testing my Examples for Exercise 2.
+#--------------------------------------------------
+Exercise 2, Example 1:
+Evaluating area_of_circle(2)
+Expected: 12.57
+Got: 12.57
+#--------------------------------------------------
+Exercise 2, Example 2:
+Evaluating area_of_circle(5)
+Expected: 78.54
+Got: 78.54
+#--------------------------------------------------
+Exercise 2, Example 3:
+Evaluating area_of_circle(10)
+Expected: 314.16
+Got: 314.16
+#--------------------------------------------------
+Testing my Examples for Exercise 3.
+#--------------------------------------------------
+Exercise 3, Example 1:
+Evaluating volume_of_cylinder(2, 5)
+Expected: 62.83
+Got: 62.83
+#--------------------------------------------------
+Exercise 3, Example 2:
+Evaluating volume_of_cylinder(5, 5)
+Expected: 392.7
+Got: 392.7
+#--------------------------------------------------
+Exercise 3, Example 3:
+Evaluating volume_of_cylinder(10, 5)
+Expected: 1570.8
+Got: 1570.8
+#--------------------------------------------------
+Testing my Examples for Exercise 4.
+#--------------------------------------------------
+Exercise 4, Example 1:
+Evaluating utility(1, 2, 0.5)
+Expected: 1.41
+Got: 1.41
+#--------------------------------------------------
+Exercise 4, Example 2:
+Evaluating utility(5, 7, 0.25)
+Expected: 6.44
+Got: 6.44
+#--------------------------------------------------
+Exercise 4, Example 3:
+Evaluating utility(10, 32, 0.01)
+Expected: 31.63
+Got: 31.63
+#--------------------------------------------------
+Testing my Examples for Exercise 5.
+#--------------------------------------------------
+Exercise 5, Example 1:
+Evaluating logit(0.5, 1, 2)
+Expected: 0.881
+Got: 0.881
+#--------------------------------------------------
+Exercise 5, Example 1:
+Evaluating logit(0.25, 5, 10)
+Expected: 0.999
+Got: 0.999
+#--------------------------------------------------
+Exercise 5, Example 1:
+Evaluating logit(0.01, 3, 7)
+Expected: 0.956
+Got: 0.956
+#--------------------------------------------------
+# Testing with doctest module
+#--------------------------------------------------
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 77, in __main__.area_of_circle
+Failed example:
+    area_of_circle(2)
+Expected:
+    12.57
+Got:
+    12.566370614359172
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 79, in __main__.area_of_circle
+Failed example:
+    area_of_circle(5)
+Expected:
+    78.54
+Got:
+    78.53981633974483
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 81, in __main__.area_of_circle
+Failed example:
+    area_of_circle(10)
+Expected:
+    314.16
+Got:
+    314.1592653589793
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 93, in __main__.logit
+Failed example:
+    logit(0.5, 1, 2)
+Expected:
+    0.881
+Got:
+    0.8807970779778824
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 95, in __main__.logit
+Failed example:
+    logit(0.25, 5, 10)
+Expected:
+    0.999
+Got:
+    0.9994472213630764
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 97, in __main__.logit
+Failed example:
+    logit(0.01, 3, 7)
+Expected:
+    0.956
+Got:
+    0.9556381724108436
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 79, in __main__.utility
+Failed example:
+    utility(1, 2, 0.5)
+Expected:
+    1.41
+Got:
+    1.4142135623730951
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 81, in __main__.utility
+Failed example:
+    utility(5, 7, 0.25)
+Expected:
+    6.44
+Got:
+    6.435259006574429
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 83, in __main__.utility
+Failed example:
+    utility(10, 32, 0.01)
+Expected:
+    31.63
+Got:
+    31.62994804410214
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 77, in __main__.volume_of_cylinder
+Failed example:
+    volume_of_cylinder(2, 5)
+Expected:
+    62.83
+Got:
+    62.83185307179586
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 79, in __main__.volume_of_cylinder
+Failed example:
+    volume_of_cylinder(5, 5)
+Expected:
+    392.70
+Got:
+    392.69908169872417
+**********************************************************************
+File "assignment_02/my_functions_test.py", line 81, in __main__.volume_of_cylinder
+Failed example:
+    volume_of_cylinder(10, 5)
+Expected:
+    1570.80
+Got:
+    1570.7963267948967
+**********************************************************************
+4 items had failures:
+   3 of   3 in __main__.area_of_circle
+   3 of   3 in __main__.logit
+   3 of   3 in __main__.utility
+   3 of   3 in __main__.volume_of_cylinder
+***Test Failed*** 12 failures.
+#--------------------------------------------------
+# Testing with examples in solutions
+#--------------------------------------------------
+#--------------------------------------------------
+Testing my Examples for Exercise 1.
+#--------------------------------------------------
+Exercise 1, Example 1:
+Evaluating average(10,20)
+Expected: 15.0
+Got: 15.0
+#--------------------------------------------------
+Exercise 1, Example 2:
+Evaluating average(2.5, 3.0)
+Expected: 2.75
+Got: 2.75
+#--------------------------------------------------
+Exercise 1, Example 3:
+Evaluating average(2.5, 3.0)
+Expected: 0.0
+Got: 0.0
+#--------------------------------------------------
+Testing my Examples for Exercise 2.
+#--------------------------------------------------
+Exercise 2, Example 1:
+Evaluating area_of_circle(0.0)
+Expected: 0.0
+Got: 0.0
+#--------------------------------------------------
+Exercise 2, Example 2:
+Evaluating area_of_circle(1.0)
+Expected: 3.141592653589793
+Got: 3.141592653589793
+#--------------------------------------------------
+Exercise 2, Example 3:
+Evaluating area_of_circle(1.0/math.sqrt(math.pi))
+Expected: 1.0
+Got: 0.9999999999999999
+#--------------------------------------------------
+Testing my Examples for Exercise 3.
+#--------------------------------------------------
+Exercise 3, Example 1:
+Evaluating volume_of_cylinder(0.0, 9.9)
+Expected: 0.0
+Got: 0.0
+#--------------------------------------------------
+Exercise 3, Example 2:
+Evaluating volume_of_cylinder(1.0, 1.0)
+Expected: 3.141592653589793
+Got: 3.141592653589793
+#--------------------------------------------------
+Exercise 3, Example 3:
+Evaluating volume_of_cylinder(1.0/math.pi, math.pi)
+Expected: 1.0
+Got: 1.0
+#--------------------------------------------------
+Testing my Examples for Exercise 4.
+#--------------------------------------------------
+Exercise 4, Example 1:
+Evaluating utility(0.0, 4.7, 0.5)
+Expected: 0.0
+Got: 0.0
+#--------------------------------------------------
+Exercise 4, Example 2:
+Evaluating utility(1.0, 1.0, 0.75)
+Expected: 1.0
+Got: 1.0
+#--------------------------------------------------
+Exercise 4, Example 3:
+Evaluating utility(4, 16, 0.5)
+Expected: 8.0
+Got: 8.0
+#--------------------------------------------------
+Testing my Examples for Exercise 5.
+#--------------------------------------------------
+Exercise 5, Example 1:
+Evaluating logit(13.7, 0.0, 0.0)
+Expected: 0.5
+Got: 0.5
+#--------------------------------------------------
+Exercise 5, Example 2:
+Evaluating logit(0.0, math.log(2), 2.0)
+Expected: 0.6666666666666666
+Got: 0.6666666666666666
+#--------------------------------------------------
+Exercise 5, Example 3:
+Evaluating logit(1.0, 0.0, math.log(5))
+Expected: 0.8333333333333334
+Got: 0.8333333333333333
+#--------------------------------------------------
