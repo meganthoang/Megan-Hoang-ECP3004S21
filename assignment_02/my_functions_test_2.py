@@ -34,28 +34,10 @@ exec(open("assignment_02/my_functions.py").read())
 # This puts the function definitions in memory.
 
 
-# Import doctest to test functions from docstring.
-import doctest
-
 # Import math because my test cases use math.pi
 # and math.log
 import math
 
-
-
-##################################################
-# Testing with doctest module
-##################################################
-
-# Use the doctest module to test the examples in the docstring
-
-print("#" + 50*"-")
-print("# Testing with doctest module")
-print("#" + 50*"-")
-
-# Run the examples to test examples in the docstrings
-# of the functions in this module.
-doctest.testmod()
 
 
 ##################################################

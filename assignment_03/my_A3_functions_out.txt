@@ -1,0 +1,69 @@
+#--------------------------------------------------
+Testing my Examples for Exercise 1.
+#--------------------------------------------------
+Exercise 1, Example 1:
+Evaluating quad_roots_1(0.5, 2, -5, -3)
+Expected: [-0.5, 3]
+Got: [3.0, -0.5]
+#--------------------------------------------------
+Exercise 1, Example 2:
+Evaluating quad_roots_1(-1.15, 5, -2, -9)
+Expected: [-1.15, 1.55]
+Got: [1.5564659966250536, -1.1564659966250537]
+#--------------------------------------------------
+Exercise 1, Example 3:
+Evaluating quad_roots_1(-2.54, 1, -1, -9)
+Expected: [-2.54, 3.54]
+Got: [3.5413812651491097, -2.5413812651491097]
+#--------------------------------------------------
+Testing my Examples for Exercise 2.
+#--------------------------------------------------
+Exercise 2, Example 1:
+Evaluating quad_roots_real(0.5, 2, -5, -3)
+Expected: [-0.5, 3]
+Got: [3.0, -0.5]
+#--------------------------------------------------
+Exercise 2, Example 2:
+Evaluating quad_roots_real(-1.15, 5, -2, -9)
+Expected: [-1.15, 1.55]
+Got: [1.5564659966250536, -1.1564659966250537]
+#--------------------------------------------------
+Exercise 2, Example 3:
+Evaluating quad_roots_real(-2.54, 1, -1, -9)
+Expected: [-2.54, 3.54]
+Got: [3.5413812651491097, -2.5413812651491097]
+#--------------------------------------------------
+Testing my Examples for Exercise 3.
+#--------------------------------------------------
+Exercise 3, Example 1:
+Evaluating utility_positive(1, 2, 0.5)
+Expected: 1.41
+Got: 1.41
+#--------------------------------------------------
+Exercise 3, Example 2:
+Evaluating utility_positive(5, 7, 0.25)
+Expected: 6.44
+Got: 6.44
+#--------------------------------------------------
+Exercise 3, Example 3:
+Evaluating utility_positive(10, 32, 0.01)
+Expected: x is negative + None
+x is negative
+Got: None
+#--------------------------------------------------
+Testing my Examples for Exercise 4.
+#--------------------------------------------------
+Exercise 4, Example 1:
+Evaluating logit_like(0, 1, 2, 0.5)
+Expected: 1.08
+Got: 1.0788897342925496
+#--------------------------------------------------
+Exercise 4, Example 2:
+Evaluating logit_like(6, 3, 2, 9)
+Expected: None
+Got: None
+#--------------------------------------------------
+Exercise 4, Example 3:
+Evaluating logit_like(10, 3, 8, 9)
+Expected: None
+Got: None

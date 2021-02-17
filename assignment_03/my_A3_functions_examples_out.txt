@@ -1,0 +1,243 @@
+#--------------------------------------------------
+# Importing function definitions
+# Examples within script my_A3_functions.py:
+#--------------------------------------------------
+#--------------------------------------------------
+Testing my Examples for Exercise 1.
+#--------------------------------------------------
+Exercise 1, Example 1:
+Evaluating quad_roots_1(0.5, 2, -5, -3)
+Expected: [-0.5, 3]
+Got: [3.0, -0.5]
+#--------------------------------------------------
+Exercise 1, Example 2:
+Evaluating quad_roots_1(-1.15, 5, -2, -9)
+Expected: [-1.15, 1.55]
+Got: [1.5564659966250536, -1.1564659966250537]
+#--------------------------------------------------
+Exercise 1, Example 3:
+Evaluating quad_roots_1(-2.54, 1, -1, -9)
+Expected: [-2.54, 3.54]
+Got: [3.5413812651491097, -2.5413812651491097]
+#--------------------------------------------------
+Testing my Examples for Exercise 2.
+#--------------------------------------------------
+Exercise 2, Example 1:
+Evaluating quad_roots_real(0.5, 2, -5, -3)
+Expected: [-0.5, 3]
+Got: [3.0, -0.5]
+#--------------------------------------------------
+Exercise 2, Example 2:
+Evaluating quad_roots_real(-1.15, 5, -2, -9)
+Expected: [-1.15, 1.55]
+Got: [1.5564659966250536, -1.1564659966250537]
+#--------------------------------------------------
+Exercise 2, Example 3:
+Evaluating quad_roots_real(-2.54, 1, -1, -9)
+Expected: [-2.54, 3.54]
+Got: [3.5413812651491097, -2.5413812651491097]
+#--------------------------------------------------
+Testing my Examples for Exercise 3.
+#--------------------------------------------------
+Exercise 3, Example 1:
+Evaluating utility_positive(1, 2, 0.5)
+Expected: 1.41
+Got: 1.41
+#--------------------------------------------------
+Exercise 3, Example 2:
+Evaluating utility_positive(5, 7, 0.25)
+Expected: 6.44
+Got: 6.44
+#--------------------------------------------------
+Exercise 3, Example 3:
+Evaluating utility_positive(10, 32, 0.01)
+Expected: x is negative + None
+x is negative
+Got: None
+#--------------------------------------------------
+Testing my Examples for Exercise 4.
+#--------------------------------------------------
+Exercise 4, Example 1:
+Evaluating logit_like(0, 1, 2, 0.5)
+Expected: 1.08
+Got: 1.0788897342925496
+#--------------------------------------------------
+Exercise 4, Example 2:
+Evaluating logit_like(6, 3, 2, 9)
+Expected: None
+Got: None
+#--------------------------------------------------
+Exercise 4, Example 3:
+Evaluating logit_like(10, 3, 8, 9)
+Expected: None
+Got: None
+#--------------------------------------------------
+# Testing with examples in solutions
+#--------------------------------------------------
+#--------------------------------------------------
+Testing my Examples for Exercise 1.
+#--------------------------------------------------
+Exercise 1, Example 1:
+Evaluating quad_roots_1(1, -2, 1)
+Expected: [1.0, 1.0]
+Error in quad_roots_1(1, -2, 1)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 82, in <module>
+    print("Got: " + str(quad_roots_1(1, -2, 1)))
+TypeError: quad_roots_1() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 1, Example 2:
+Evaluating quad_roots_1(1, 0, -1)
+Expected: [1.0, -1.0]
+Error in quad_roots_1(1, 0, -1)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 93, in <module>
+    print("Got: " + str(quad_roots_1(1, 0, -1)))
+TypeError: quad_roots_1() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 1, Example 3:
+Evaluating quad_roots_1(2, 2, -12)
+Expected: [2.0, -3.0]
+Error in quad_roots_1(2, 2, -12)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 104, in <module>
+    print("Got: " + str(quad_roots_1(2, 2, -12)))
+TypeError: quad_roots_1() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Testing my Examples for Exercise 2.
+#--------------------------------------------------
+Exercise 2, Example 1:
+Evaluating quad_roots_real(1, -2, 1)
+Expected: [1.0, 1.0]
+Error in quad_roots_real(1, -2, 1)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 126, in <module>
+    print("Got: " + str(quad_roots_real(1, -2, 1)))
+TypeError: quad_roots_real() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 2, Example 2:
+Evaluating quad_roots_real(1, 0, -1)
+Expected: [1.0, -1.0]
+Error in quad_roots_real(1, 0, -1)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 137, in <module>
+    print("Got: " + str(quad_roots_real(1, 0, -1)))
+TypeError: quad_roots_real() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 2, Example 3:
+Evaluating quad_roots_real(2, 2, -12)
+Expected: [2.0, -3.0]
+Error in quad_roots_real(2, 2, -12)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 148, in <module>
+    print("Got: " + str(quad_roots_real(2, 2, -12)))
+TypeError: quad_roots_real() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 2, Example 4:
+Evaluating quad_roots_real(0, 0, 0)
+Expected: [247, 0.16113216826413782]
+Error in quad_roots_real(0, 0, 0)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 162, in <module>
+    print("Got: " + str(quad_roots_real(0, 0, 0)))
+TypeError: quad_roots_real() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 2, Example 5:
+Evaluating quad_roots_real(0, 0, 7.0)
+Expected: None
+Error in quad_roots_real(0, 0, 7.0)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 172, in <module>
+    print("Got: " + str(quad_roots_real(0, 0, 7.0)))
+TypeError: quad_roots_real() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 2, Example 6:
+Evaluating quad_roots_real(0, 4.0, 2.0)
+Expected: [-0.5, -0.5]
+Error in quad_roots_real(0, 4.0, 2.0)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 182, in <module>
+    print("Got: " + str(quad_roots_real(0, 4.0, 2.0)))
+TypeError: quad_roots_real() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Exercise 2, Example 7:
+Evaluating quad_roots_real(1.0, 0, 1.0)
+Expected: None
+Error in quad_roots_real(1.0, 0, 1.0)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_03/my_A3_functions_examples.py", line 192, in <module>
+    print("Got: " + str(quad_roots_real(1.0, 0, 1.0)))
+TypeError: quad_roots_real() missing 1 required positional argument: 'c'
+
+#--------------------------------------------------
+Testing my Examples for Exercise 3.
+#--------------------------------------------------
+Exercise 3, Example 1:
+Evaluating utility_positive(0.0, 4.7, 0.5)
+Expected: 0.0
+Got: 0.0
+#--------------------------------------------------
+Exercise 3, Example 2:
+Evaluating utility_positive(1.0, 1.0, 0.75)
+Expected: 1.0
+Got: 1.0
+#--------------------------------------------------
+Exercise 3, Example 3:
+Evaluating utility_positive(4, 16, 0.5)
+Expected: 8.0
+Got: 8.0
+#--------------------------------------------------
+Exercise 3, Example 4:
+Evaluating utility_positive(-1.0, 1.0, 0.5)
+Expected: None
+x is negative
+Got: None
+#--------------------------------------------------
+Exercise 3, Example 5:
+Evaluating utility_positive(1.0, -1.0, 0.5)
+Expected: None
+y is negative
+Got: None
+#--------------------------------------------------
+Exercise 3, Example 6:
+Evaluating utility_positive(1.0, 1.0, -0.5)
+Expected: None
+a is negative
+Got: None
+#--------------------------------------------------
+Exercise 3, Example 7:
+Evaluating utility_positive(1.0, 1.0, 1.5)
+Expected: None
+Got: 1.0
+#--------------------------------------------------
+Testing my Examples for Exercise 4.
+#--------------------------------------------------
+Exercise 4, Example 1:
+Evaluating logit_like(1, 13.7, 0.0, 0.0)
+Expected: -0.6931471805599453
+Got: -0.6931471805599453
+#--------------------------------------------------
+Exercise 4, Example 2:
+Evaluating logit_like(0, 0.0, math.log(2), 2.0)
+Expected: -1.0986122886681098
+Got: 1.4054651081081644
+#--------------------------------------------------
+Exercise 4, Example 3:
+Evaluating logit_like(1, 1.0, 0.0, math.log(5))
+Expected: -0.1823215567939546
+Got: -0.1823215567939547
+#--------------------------------------------------
+Exercise 4, Example 4:
+Evaluating logit_like(7, 1.0, 0.0, math.log(5))
+Expected: None
+Got: None
+#--------------------------------------------------
