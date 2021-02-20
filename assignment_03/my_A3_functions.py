@@ -79,13 +79,15 @@ def utility_positive(x: float, y: float, a: float) -> float:
     None + "x is negative"
     """
     
-    if x<0 or y<0 or a<0:
+    if x<0 or y<0 or a<0 or a>1:
         if x<0:
             print("x is negative")
         if y<0:
             print("y is negative")
         if a<0:
             print("a is negative")
+        if a>1:
+            print("1 - a is negative")
         return None
     else :
       return  (x**a * y**(1-a))
@@ -103,11 +105,13 @@ def logit_like(y: int, x: float, b0: float, b1: float) -> float:
     """
     
     exp = math.exp(b0+x*b1)
-    exp = math.log(exp/(1+exp))
+    exp = exp/(1+exp)
     if y==0:
-        return 1-exp
+        return math.log(1-exp)
     elif y==1:
-        return exp
+        return math.log(exp)
+    else:
+        return None
 
 
 # Only function definitions above this point. 

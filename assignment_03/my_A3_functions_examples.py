@@ -71,40 +71,60 @@ print("#" + 50*"-")
 
 #--------------------------------------------------
 
+
 print("#" + 50*"-")
 print("Testing my Examples for Exercise 1.")
 
+# I'm sorry: I mistakely said to have 4 arguments
+# in quad_roots_1(x, a, b, c) but I really meant to
+# have only 3 arguments (a, b, c), since x is mot used.
+# Some of you followed either approach. 
+# The following statement counts the number of arguments
+# and then makes the appropriate function calls:
+# quad_roots_1.__code__.co_argcount
+
+    
 print("#" + 50*"-")
 print("Exercise 1, Example 1:")
 print("Evaluating quad_roots_1(1, -2, 1)")
 print("Expected: " + str([1.0, 1.0]))
 try:
-    print("Got: " + str(quad_roots_1(1, -2, 1)))
+    if quad_roots_1.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_1(1, -2, 1)))
+    elif quad_roots_1.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_1(0, 1, -2, 1)))
 except:
     print("Error in quad_roots_1(1, -2, 1)")
     logging.error(traceback.format_exc())
-
 
 print("#" + 50*"-")
 print("Exercise 1, Example 2:")
 print("Evaluating quad_roots_1(1, 0, -1)")
 print("Expected: " + str([1.0, -1.0]))
 try:
-    print("Got: " + str(quad_roots_1(1, 0, -1)))
+    if quad_roots_1.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_1(1, 0, -1)))
+    elif quad_roots_1.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_1(0, 1, 0, -1)))
 except:
     print("Error in quad_roots_1(1, 0, -1)")
     logging.error(traceback.format_exc())
-
 
 print("#" + 50*"-")
 print("Exercise 1, Example 3:")
 print("Evaluating quad_roots_1(2, 2, -12)")
 print("Expected: " + str([2.0, -3.0]))
 try:
-    print("Got: " + str(quad_roots_1(2, 2, -12)))
+    if quad_roots_1.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_1(2, 2, -12)))
+    elif quad_roots_1.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_1(0, 2, 2, -12)))
 except:
     print("Error in quad_roots_1(2, 2, -12)")
     logging.error(traceback.format_exc())
+        
+    
+    
 
 
 # Continue with the rest of your examples.
@@ -123,7 +143,10 @@ print("Exercise 2, Example 1:")
 print("Evaluating quad_roots_real(1, -2, 1)")
 print("Expected: " + str([1.0, 1.0]))
 try:
-    print("Got: " + str(quad_roots_real(1, -2, 1)))
+    if quad_roots_real.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_real(1, -2, 1)))
+    elif quad_roots_real.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_real(0, 1, -2, 1)))
 except:
     print("Error in quad_roots_real(1, -2, 1)")
     logging.error(traceback.format_exc())
@@ -134,7 +157,10 @@ print("Exercise 2, Example 2:")
 print("Evaluating quad_roots_real(1, 0, -1)")
 print("Expected: " + str([1.0, -1.0]))
 try:
-    print("Got: " + str(quad_roots_real(1, 0, -1)))
+    if quad_roots_real.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_real(1, 0, -1)))
+    elif quad_roots_real.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_real(0, 1, 0, -1)))
 except:
     print("Error in quad_roots_real(1, 0, -1)")
     logging.error(traceback.format_exc())
@@ -145,7 +171,10 @@ print("Exercise 2, Example 3:")
 print("Evaluating quad_roots_real(2, 2, -12)")
 print("Expected: " + str([2.0, -3.0]))
 try:
-    print("Got: " + str(quad_roots_real(2, 2, -12)))
+    if quad_roots_real.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_real(2, 2, -12)))
+    elif quad_roots_real.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_real(0, 2, 2, -12)))
 except:
     print("Error in quad_roots_real(2, 2, -12)")
     logging.error(traceback.format_exc())
@@ -159,7 +188,10 @@ print("Exercise 2, Example 4:")
 print("Evaluating quad_roots_real(0, 0, 0)")
 print("Expected: " + str([247, math.sqrt(math.pi)/11]))
 try:
-    print("Got: " + str(quad_roots_real(0, 0, 0)))
+    if quad_roots_real.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_real(0, 0, 0)))
+    elif quad_roots_real.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_real(0, 0, 0, 0)))
 except:
     print("Error in quad_roots_real(0, 0, 0)")
     logging.error(traceback.format_exc())
@@ -169,7 +201,10 @@ print("Exercise 2, Example 5:")
 print("Evaluating quad_roots_real(0, 0, 7.0)")
 print("Expected: " + str(None))
 try:
-    print("Got: " + str(quad_roots_real(0, 0, 7.0)))
+    if quad_roots_real.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_real(0, 0, 7.0)))
+    elif quad_roots_real.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_real(0, 0, 0, 7.0)))
 except:
     print("Error in quad_roots_real(0, 0, 7.0)")
     logging.error(traceback.format_exc())
@@ -179,7 +214,10 @@ print("Exercise 2, Example 6:")
 print("Evaluating quad_roots_real(0, 4.0, 2.0)")
 print("Expected: " + str([-0.5, -0.5]))
 try:
-    print("Got: " + str(quad_roots_real(0, 4.0, 2.0)))
+    if quad_roots_real.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_real(0, 4.0, 2.0)))
+    elif quad_roots_real.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_real(0, 0, 4.0, 2.0)))
 except:
     print("Error in quad_roots_real(0, 4.0, 2.0)")
     logging.error(traceback.format_exc())
@@ -189,7 +227,10 @@ print("Exercise 2, Example 7:")
 print("Evaluating quad_roots_real(1.0, 0, 1.0)")
 print("Expected: " + str(None))
 try:
-    print("Got: " + str(quad_roots_real(1.0, 0, 1.0)))
+    if quad_roots_real.__code__.co_argcount == 3: 
+        print("Got: " + str(quad_roots_real(1.0, 0, 1.0)))
+    elif quad_roots_real.__code__.co_argcount == 4: 
+        print("Got: " + str(quad_roots_real(0, 1.0, 0, 1.0)))
 except:
     print("Error in quad_roots_real(1.0, 0, 1.0)")
     logging.error(traceback.format_exc())
