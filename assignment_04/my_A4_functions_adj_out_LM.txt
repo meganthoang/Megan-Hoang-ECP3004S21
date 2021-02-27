@@ -1,0 +1,77 @@
+**********************************************************************
+File "assignment_04/my_A4_functions.py", line 110, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 0.5)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[0]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 0.5)
+      File "assignment_04/my_A4_functions.py", line 121, in logit_like_sum
+        if y[i] == 1:
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions.py", line 112, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[1]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 9)
+      File "assignment_04/my_A4_functions.py", line 121, in logit_like_sum
+        if y[i] == 1:
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions.py", line 114, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 8, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[2]>", line 1, in <module>
+        logit_like_sum(y, x, 8, 9)
+      File "assignment_04/my_A4_functions.py", line 121, in logit_like_sum
+        if y[i] == 1:
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions.py", line 36, in __main__.matrix_multiply
+Failed example:
+    matrix_multiply(np.array([[10, 9, 8], [7, 6, 5]], dtype = int), np.array([[1, 2, 3], [4, 5, 6]], dtype = int))
+Expected:
+    [[46. 65. 84.]
+     [31. 44. 57.]]
+    array([[46., 65., 84.],
+           [31., 44., 57.]])
+Got:
+    The matrices are not conformable
+**********************************************************************
+File "assignment_04/my_A4_functions.py", line 41, in __main__.matrix_multiply
+Failed example:
+    matrix_multiply(np.array([[1, 2, 3], [4, 5, 6]], dtype = int), np.array([[10, 9, 8], [7, 6, 5]], dtype = int))
+Expected:
+    [[24. 21. 18.]
+     [75. 66. 57.]]
+    array([[24., 21., 18.],
+           [75., 66., 57.]])
+Got:
+    The matrices are not conformable
+**********************************************************************
+File "assignment_04/my_A4_functions.py", line 46, in __main__.matrix_multiply
+Failed example:
+    matrix_multiply(np.array([[100, 48, 30], [20, 68, 38]], dtype = int), np.array([[9, 6, 8], [9, 3, 5]], dtype = int))
+Expected:
+    [[1332.  744. 1040.]
+     [ 792.  324.  500.]]
+    array([[1332.,  744., 1040.],
+           [ 792.,  324.,  500.]])
+Got:
+    The matrices are not conformable
+**********************************************************************
+2 items had failures:
+   3 of   3 in __main__.logit_like_sum
+   3 of   3 in __main__.matrix_multiply
+***Test Failed*** 6 failures.

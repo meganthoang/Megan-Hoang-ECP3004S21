@@ -1,0 +1,227 @@
+#--------------------------------------------------
+# Importing function definitions
+# Doctest for script my_A4_functions.py:
+#--------------------------------------------------
+**********************************************************************
+File "assignment_04/my_A4_functions_examples.py", line 110, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 0.5)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[0]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 0.5)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions_examples.py", line 112, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[1]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 9)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions_examples.py", line 114, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 8, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[2]>", line 1, in <module>
+        logit_like_sum(y, x, 8, 9)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+1 items had failures:
+   3 of   3 in __main__.logit_like_sum
+***Test Failed*** 3 failures.
+#--------------------------------------------------
+# Testing with examples in solutions
+#--------------------------------------------------
+#--------------------------------------------------
+Testing my Examples for Exercise 1.
+#--------------------------------------------------
+Note that it is extra cautious to
+send numpy arrays in the correct shape,
+in case the function is sensitive to the specification.
+I test with both arrays and lists, so that
+it might work for either specification.
+#--------------------------------------------------
+Exercise 1, Example 1:
+Evaluating matrix_multiply(np.array([[1., 2.], [3., 4.]]), np.array([1., 1.]).reshape(2,1))
+Expected: array([[3.],[7.]])
+Got: 
+
+[[3.]
+ [7.]]
+[[3.]
+ [7.]]
+#--------------------------------------------------
+Exercise 1, Example 1:
+Evaluating matrix_multiply([[1., 2.], [3., 4.]], [[1.], [1.]])
+Expected: array([[3.],[7.]])
+Got: 
+
+[[3.]
+ [7.]]
+[[3.]
+ [7.]]
+#--------------------------------------------------
+Exercise 1, Example 2:
+Evaluating matrix_multiply(list(range(4)), [[5.],[5.],[5.],[5.]])
+Expected: array([[30.]])
+Got: 
+
+Error inmatrix_multiply(list(range(4)), [[5.],[5.],[5.],[5.]])
+ERROR:root:Traceback (most recent call last):
+  File "assignment_04/my_A4_functions_examples.py", line 129, in <module>
+    matrix_multiply(list(range(4)), [[5.],[5.],[5.],[5.]])
+  File "<string>", line 60, in matrix_multiply
+TypeError: 'int' object is not subscriptable
+
+#--------------------------------------------------
+Exercise 1, Example 3:
+Evaluating matrix_multiply(np.array([[1], [2]]), np.array([[3, 4]]))
+Expected: array([[3., 4.],[6., 8.]])
+Got: 
+
+The matrices are not conformable
+None
+#--------------------------------------------------
+Exercise 1, Example 3:
+Evaluating matrix_multiply([[1], [2]], [[3, 4]])
+Expected: array([[3., 4.],[6., 8.]])
+Got: 
+
+The matrices are not conformable
+None
+#--------------------------------------------------
+Exercise 1, Example 4:
+Evaluating matrix_multiply(np.array([[1., 2.], [3., 4.]]), np.array([[3, 4]]))
+Expected: Error: Matrices are not conformable...
+Got: 
+
+The matrices are not conformable
+None
+#--------------------------------------------------
+Testing my Examples for Exercise 2.
+#--------------------------------------------------
+Notice that the examples are simple sums of integers
+and one corner case evaluates to zero.
+#--------------------------------------------------
+Exercise 2, Example 1:
+Evaluating ssr_loops([2, 2, 2], [1, 1, 1], 0.5, 0.5)
+Expected: 3.0
+Got: 
+
+3.0
+#--------------------------------------------------
+Exercise 2, Example 2:
+Evaluating ssr_loops([3, 0, 3], [0, 2, 2], 1.0, 0.5)
+Expected: 9.0
+Got: 
+
+9.0
+#--------------------------------------------------
+Exercise 2, Example 3:
+Evaluating ssr_loops([2, 3, 4], [1, 2, 3], 1.0, 1.0)
+Expected: 0.0
+Got: 
+
+0.0
+#--------------------------------------------------
+Testing my Examples for Exercise 3.
+#--------------------------------------------------
+Notice that these are the same examples
+as for ssr_loops because the function
+performs the same calculations.
+#--------------------------------------------------
+Exercise 3, Example 1:
+Evaluating ssr_vec(np.array([2, 2, 2]), np.array([1, 1, 1]), 0.5, 0.5)
+Expected: 3.0
+Got: 
+
+3.0
+#--------------------------------------------------
+Exercise 3, Example 2:
+Evaluating ssr_vec(np.array([3, 0, 3]), np.array([0, 2, 2]), 1.0, 0.5)
+Expected: 9.0
+Got: 
+
+9.0
+#--------------------------------------------------
+Exercise 3, Example 3:
+Evaluating ssr_vec(np.array([2, 3, 4]), np.array([1, 2, 3]), 1.0, 1.0)
+Expected: 0.0
+Got: 
+
+0.0
+#--------------------------------------------------
+Testing my Examples for Exercise 4.
+#--------------------------------------------------
+Notice that the first simple example is the same
+as one from Assignment 3.
+These should still work with only one observation.
+#--------------------------------------------------
+Exercise 4, Example 1:
+Evaluating logit_like_sum([1], [13.7], 0.0, 0.0)
+Expected: -0.6931471805599453
+Got: 
+
+Error inlogit_like_sum([1], [13.7], 0.0, 0.0)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_04/my_A4_functions_examples.py", line 321, in <module>
+    logit_like_sum([1], [13.7], 0.0, 0.0)
+  File "<string>", line 127, in logit_like_sum
+ValueError: math domain error
+
+#--------------------------------------------------
+Exercise 4, Example 2:
+Evaluating logit_like_sum([1, 1, 1], [13.7, 12, 437], 0.0, 0.0)
+Expected: -2.0794415416798357
+Got: 
+
+Error inlogit_like_sum([1, 1, 1], [13.7, 12, 437], 0.0, 0.0)
+ERROR:root:Traceback (most recent call last):
+  File "assignment_04/my_A4_functions_examples.py", line 336, in <module>
+    logit_like_sum([1, 1, 1], [13.7, 12, 437], 0.0, 0.0)
+  File "<string>", line 127, in logit_like_sum
+ValueError: math domain error
+
+#--------------------------------------------------
+Exercise 4, Example 3:
+Evaluating logit_like_sum([1, 0], [1, 1], 0.0, math.log(2))
+Expected: -1.504077396776274
+Got: 
+
+Error inlogit_like_sum([1, 0], [1, 1], 0.0, math.log(2))
+ERROR:root:Traceback (most recent call last):
+  File "assignment_04/my_A4_functions_examples.py", line 351, in <module>
+    logit_like_sum([1, 0], [1, 1], 0.0, math.log(2))
+  File "<string>", line 127, in logit_like_sum
+ZeroDivisionError: float division by zero
+
+#--------------------------------------------------
+Exercise 4, Example 4:
+Evaluating logit_like_sum([1, 0], [2, 3], math.log(5), math.log(2))
+Expected: -3.762362230873739
+Got: 
+
+0.029374608679904272
+#--------------------------------------------------
+Testing the corner case with non-binary y.
+#--------------------------------------------------
+Exercise 4, Example 5:
+Evaluating logit_like_sum([1, 7], [2, 3], math.log(5), math.log(2))
+Expected: Error: Observations in y must be either zero or one.
+Got: 
+
+0.08004270767353652
+#--------------------------------------------------

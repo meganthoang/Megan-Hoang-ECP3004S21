@@ -1,0 +1,89 @@
+#--------------------------------------------------
+# Importing function definitions
+# Doctest for script my_A4_functions.py:
+#--------------------------------------------------
+**********************************************************************
+File "assignment_04/my_A4_functions_doctest.py", line ?, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 0.5)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[0]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 0.5)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions_doctest.py", line ?, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[1]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 9)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions_doctest.py", line ?, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 8, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[2]>", line 1, in <module>
+        logit_like_sum(y, x, 8, 9)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+1 items had failures:
+   3 of   3 in __main__.logit_like_sum
+***Test Failed*** 3 failures.
+#--------------------------------------------------
+# Testing with doctest module
+#--------------------------------------------------
+**********************************************************************
+File "assignment_04/my_A4_functions_doctest.py", line ?, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 0.5)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[0]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 0.5)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions_doctest.py", line ?, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 2, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[1]>", line 1, in <module>
+        logit_like_sum(y, x, 2, 9)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+File "assignment_04/my_A4_functions_doctest.py", line ?, in __main__.logit_like_sum
+Failed example:
+    logit_like_sum(y, x, 8, 9)
+Exception raised:
+    Traceback (most recent call last):
+      File "C:\Users\le279259\Anaconda3\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.logit_like_sum[2]>", line 1, in <module>
+        logit_like_sum(y, x, 8, 9)
+      File "<string>", line 121, in logit_like_sum
+    ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+**********************************************************************
+1 items had failures:
+   3 of   3 in __main__.logit_like_sum
+***Test Failed*** 3 failures.
+TestResults(failed=3, attempted=12)
+#--------------------------------------------------

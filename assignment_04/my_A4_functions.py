@@ -49,7 +49,7 @@ def matrix_multiply(mat_1, mat_2):
     array([[1332.,  744., 1040.],
            [ 792.,  324.,  500.]])
     """
-    if len(mat_2) != len(mat_1):
+    if len(mat_2) != len(mat_1[0]):
         print("The matrices are not conformable")
         return None;
     else:
@@ -58,7 +58,7 @@ def matrix_multiply(mat_1, mat_2):
             for j in range(len(mat_2[0])):
                 for k in range(len(mat_2)):
                     result[i][j] += mat_1[i][k]*mat_2[k][j]
-        print(result)
+        # print(result)
         return result
 
 
@@ -118,14 +118,17 @@ def logit_like_sum(y, x, beta_0, beta_1):
     result = 0
     exp = 0
     for i in range(len(y)) :
-        if y[i] == 0:
+        if y[i] == 1:
             exp = math.exp(beta_0+x[i]*beta_1)
             exp = math.log(exp/(1+exp))
             result += exp
-        else:
-            exp = 1-math.exp(beta_0+x[i]*beta_1)
-            exp = math.log(exp/(1+exp))
+        elif y[i] == 0:
+            exp = math.exp(beta_0+x[i]*beta_1)
+            exp = math.log(1 - exp/(1+exp))
             result += exp
+        else:
+            # y can only be either zero or one.
+            return None
     return result
     
 
