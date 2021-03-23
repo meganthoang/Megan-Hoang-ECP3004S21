@@ -1,0 +1,12 @@
+**********************************************************************
+File "my_midterm_module.py", line 95, in __main__.calc_bundle
+Failed example:
+    calc_bundle(10, 20, 120, 1.0/3.0)
+Expected:
+    [4.0, 4.0]
+Got:
+    [4.0, 4.000000000000001]
+**********************************************************************
+1 items had failures:
+   1 of   3 in __main__.calc_bundle
+***Test Failed*** 1 failures.

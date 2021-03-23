@@ -36,7 +36,11 @@ Created on Mon Mar  8 15:35:22 2021
 ##################################################
 """
 
-
+"""
+Truly excellent work!
+Perfect, except I will deduct 0.000000000000001 points 
+for the error in Exercise 2 (but then round to the nearest 1%).
+"""
 
 
 
