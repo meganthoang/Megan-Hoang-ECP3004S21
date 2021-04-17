@@ -116,8 +116,11 @@ def sqrt_z_newton(z: float, x0: float, tol: float, num_iter: float) -> float:
         f = z_squared_diff(x1, z)
         if abs(f) < tol:
             return x1
-        print("Warning: Maximum number of iterations has been reached")
-        return x1
+        
+    # This needs to be outside the loop.
+    # Otherwise, it terminates after the first iteration. 
+    print("Warning: Maximum number of iterations has been reached")
+    return x1
 
 # Exercise 5
 def z_squared_mid(x: float, z: float) -> float:
@@ -130,7 +133,8 @@ def z_squared_mid(x: float, z: float) -> float:
     >>> z_squared_mid(4, 8)
     4.0
     """
-    return (1/2) * ((z/x) * x)
+    # return (1/2) * ((z/x) * x)
+    return (1/2) * ((z/x) + x)
 
 
 # Exercise 6
@@ -157,8 +161,11 @@ def sqrt_z_fixed(z: float, x0: float, tol: float, num_iter: float) -> float:
         if abs(f-x1) < tol:
             return x1
         x = x1
-        print("Warning: Maximum number of iterations has been reached")
-        return x1
+        
+    # This needs to be outside the loop.
+    # Otherwise, it terminates after the first iteration. 
+    print("Warning: Maximum number of iterations has been reached")
+    return x1
     
 
 
