@@ -211,6 +211,18 @@ beta_0 = np.zeros(len(logit_model_fit_sm.params))
 
 soln_nm = minimize(logit_likelihood, beta_0, args=(y, X), method = 'nelder-mead', options = {'xtol': 1e-8, 'maxiter': 1000, 'disp': True})
 
+# With the Nelder-Mead algorithm, starting at a vector of zeros, 
+# it takes more than 1000 interations (the default) to 
+# achieve the optimum. 
+# Using the defaults, it doesn't match the estimates above. 
+# In contrast, the other algorithms work better, 
+# using more information about the function. 
+
+soln_nm = minimize(fun = logit_likelihood, x0 = beta_0, args = (y, X), 
+                  method = 'nelder-mead',
+                  options = {'xtol': 1e-8, 'maxiter': 2000, 'disp': True})
+
+
 #--------------------------------------------------
 #--------------------------------------------------
 
@@ -307,6 +319,12 @@ beta_0 = np.zeros(len(logit_model_fit_sm.params))
 
 soln_bfgs_jac = minimize(logit_likelihood, beta_0, args=(y, X), method='BFGS', jac = logit_gradient, options = {'xtol': 1e-8, 'maxiter': 1000, 'disp': True})
 
+# This throws an error:
+
+#   <ipython-input-250-4516590494ce>:1: OptimizeWarning: Unknown solver options: xtol
+# soln_bfgs_jac = minimize(logit_likelihood, beta_0, args=(y, X), method='BFGS', jac = logit_gradient, options = {'xtol': 1e-8, 'maxiter': 1000, 'disp': True})
+
+# But at least it worked. 
 
 #--------------------------------------------------
 #--------------------------------------------------

@@ -73,14 +73,16 @@ def newton_g_opt(x_0: float, maxiter: float, tol: float) -> float:
     1
     """
     x = x_0
-    if(g(x) < tol):
-        return x
+    # if(g(x) < tol):
+    #     return x
     for i in range(maxiter):
-        x1 = x - (g(x)/g_prime(x))
+        # x1 = x - (g(x)/g_prime(x))
+        x1 = x - (g_prime(x)/g_2prime(x))
         x = x1
-        if(g(x) < tol):
+        # if(g(x) < tol):
+        if(abs(g_prime(x1)) < tol):
             return x1
-    return x_0 - g(x_0)/g_prime(x_0)
+    # return x_0 - g(x_0)/g_prime(x_0)
 
 
 
