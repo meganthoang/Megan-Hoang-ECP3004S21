@@ -74,7 +74,7 @@ for row in cur.fetchall():
  
 # (i) Retrieve the populations of states that have a land area greater than 200,000 square miles
 cur.execute('''SELECT State FROM Density
- WHERE Area > 200000''')
+ WHERE Land_Area > 200000''')
 for row in cur.fetchall():
  print(row)
  
