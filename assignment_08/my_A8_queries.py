@@ -121,6 +121,8 @@ cur.execute('''SELECT Density.State
  AND Capitals.State > 500000''')
 for row in cur.fetchall():
  print(row)
+ 
+# Should be density < 10
 
 # (e) Retrieve the total land area of the US.
 cur.execute('SELECT SUM(Land_Area) FROM Density')
@@ -162,6 +164,9 @@ cur.execute('''SELECT State, Population, Capitals.Population
  FROM Capitals''')
 for row in cur.fetchall():
  print(row)
+ 
+# This won't work without joining to Density
+
 
 # (j - ii) List all rows corresponding to both states and territories. Leave any missing values as None.
 cur.execute('''SELECT Density.State, Density.Population, Capitals.Population
@@ -169,6 +174,12 @@ cur.execute('''SELECT Density.State, Density.Population, Capitals.Population
  WHERE Capitals.State = Density.State''')
 for row in cur.fetchall():
  print(row)
+
+# This is the answer to 2ji.
+
+# Q 2jii requires a left join. 
+
+
 
 
 # The commit method saves the changes. 
